@@ -37,8 +37,7 @@ jobs:
           git add preprocessing/smart_home_processed.csv
           git diff-index --quiet HEAD ||git commit -m "Update processed data"
           git push https://munaaliya:${{ secrets.PAT_GITHUB }}@github.com/munaaliya/Eksperimen_SML_Muna_aliya.git HEAD:main
-      env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
 
 
 
