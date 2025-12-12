@@ -41,5 +41,5 @@ def preprocess_smart_home(file_path, output_path):
 
 if __name__ == "__main__":
     input_file = "preprocessing/smart_home_device_usage_data.csv"
-    output_file = "smart_home_processed.csv"
+    output_file = "preprocessing/smart_home_processed.csv"
     X_train_res, X_test, y_train_res, y_test = preprocess_smart_home(input_file, output_file)
