@@ -38,7 +38,7 @@ jobs:
           git diff-index --quiet HEAD || git commit -m "Update processed data"
           git push 
       env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
+          TOKEN_GITHUB: ${{ secrets.TOKEN_GITHUB }}
 
 
 
