@@ -30,16 +30,6 @@ jobs:
       run: |
         python preprocessing/automate_muna_aliya_zahra.py
 
-    - name: Commit processed data
-      env:
-          TOKEN_GITHUB: ${{ secrets.TOKEN_GIT }}
-      run: |
-          git config --global user.email "munazahra1232019@gmail.com"
-          git config --global user.name "munaaliya"
-          git add preprocessing/smart_home_processed.csv
-          git diff-index --quiet HEAD || git commit -m "Update processed data"
-          git push https://munaaliya:${TOKEN_GITHUB}@github.com/munaaliya/Eksperimen_SML_Muna_aliya.git HEAD:main
-    
 
 
 
